@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con Princi & Co Group para más información sobre nuestros proyectos y servicios.">
+    <meta name="keywords" content="Princi & Co, Contacto, Información, Proyectos, Servicios">
+    <meta name="author" content="Princi & Co Group">
+    <title>Contacto - Princi & Co Group</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-image: url('img/joel-filipe-aK0EmfPuktA-unsplash.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            border-bottom: 2px solid #39393a;
+        }
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-align: left;
+            width: 100%;
+            max-width: 500px;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="overlay"></div>
+        <h1>Contacto</h1>
+    </header>
+
+    <nav>
+        <a href="index-es.html">Inicio</a>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="vision-mision.html">Visión y Misión</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <section>
+        <h2>Estamos Aquí para Ayudarte</h2>
+        <p>Si tienes preguntas, necesitas más información sobre nuestros proyectos o quieres colaborar con nosotros, no dudes en escribirnos. Estamos encantados de atenderte.</p>
+        <form action="procesar-contacto.php" method="post">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="6" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Princi & Co Group. Todos los derechos reservados.</p>
+        <p>Síguenos en <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Princi & Co Group</title>
+    <style>
+        body 
+        header {
+    background-image: url('img/photos-by-lanty-8GtqUWGMRRw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Superposición oscura */
+    z-index: 0; /* Asegura que la superposición quede debajo del contenido */
+}
+
+header h1 {
+    position: relative;
+    z-index: 1; /* Mantiene el texto por encima de la superposición */
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
+}
+nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        section {
+            padding: 30px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+        }
+        section h2 {
+            font-size: 2em;
+            color: #333;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .post {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .post h3 {
+            font-size: 1.8em;
+            color: #007BFF;
+            margin-bottom: 15px;
+        }
+        .post p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .post img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        .btn-read {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .btn-read:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog del Grupo Princi & Co</h1>
+</header>
+
+<nav>
+    <a href="index-es.html">Inicio</a>
+    <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    <a href="vision-mision.html">Visión y Misión</a>
+    <a href="blog.html">Blog</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<section>
+    <h2>Últimas Publicaciones</h2>
+
+    <div class="post">
+        <h3>La Importancia del Liderazgo Transformador</h3>
+        <img src="img/liderazgo.jpg" alt="Liderazgo Transformador">
+        <p>Descubre cómo el liderazgo transformador puede cambiar organizaciones y comunidades, creando un impacto positivo en el mundo.</p>
+        <a href="post1.html" class="btn-read">Leer Más</a>
+    </div>
+
+    <div class="post">
+        <h3>Estrategias para un Negocio Exitoso</h3>
+        <img src="img/negocios.jpg" alt="Estrategias de Negocios">
+        <p>Aprende estrategias clave para impulsar tu negocio y lograr el éxito en un mercado competitivo.</p>
+        <a href="post2.html" class="btn-read">Leer Más</a>
+    </div>
+
+    <div class="post">
+        <h3>El Rol de la Educación en el Cambio Social</h3>
+        <img src="img/educacion.jpg" alt="Educación y Cambio Social">
+        <p>Explora cómo la educación puede ser una herramienta poderosa para transformar sociedades y construir un futuro mejor.</p>
+        <a href="post3.html" class="btn-read">Leer Más</a>
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2025 Princi & Co Group. Todos los derechos reservados.</p>
+    <p>Síguenos en <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
+</footer>
+
+</body>
+</html>
