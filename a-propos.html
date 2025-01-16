@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Princi & Co Group : Un outil du Seigneur qui transforme les sept sphères de la société et diffuse l'Évangile à travers le monde.">
+    <meta name="keywords" content="Princi & Co, Vision, Mission, Leadership, Évangile, Transformation, Société">
+    <meta name="author" content="Princi & Co Group">
+    <title>Qui Sommes-Nous - Princi & Co Group</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333333;
+        }
+        header {
+            background-image: url('img/erol-ahmed-aIYFR0vbADk-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Superposition sombre */
+            z-index: 0;
+        }
+
+        header h1 {
+            position: relative;
+            z-index: 1;
+            font-size: 3em;
+            margin: 0;
+            padding: 0 20px;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Ombre plus forte */
+        }
+
+        nav {
+            background-color: #333333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 30px;
+            margin: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            font-size: 2em;
+            color: #333333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .sphere, .company {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            margin: 15px 0;
+        }
+        .sphere-name, .company-name {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #007BFF;
+            width: 25%;
+            padding-right: 20px;
+            text-align: left;
+        }
+        .sphere-description, .company-description {
+            font-size: 1.2em;
+            color: #333333;
+            width: 70%;
+        }
+        .company-logo {
+            width: 120px;
+            margin-right: 20px;
+            transition: transform 0.3s ease; /* Transition fluide pour le logo */
+        }
+        .company-logo:hover {
+            transform: scale(1.1); /* Zoom fluide */
+        }
+        .btn-info {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px 0;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Ajout de transitions */
+        }
+        .btn-info:hover {
+            background-color: #0056b3;
+            transform: translateY(0); /* Conserver la position */
+        }
+        footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .logo-princi {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 999;
+            width: 100px;
+            transition: transform 0.3s ease;
+        }
+        .logo-princi:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Princi & Co Group - Qui Sommes-Nous</h1>
+    </header>
+
+    <nav>
+        <a href="index-fr.html">Accueil</a>
+        <a href="a-propos.html">Qui Sommes-Nous</a>
+        <a href="vision-mission.fr.html">Vision & Mission</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Logo Flottant -->
+    <img src="img/sin fondo.svg" alt="Logo Princi & Co" class="logo-princi">
+
+    <section>
+        <h2>Les Sphères de la Société</h2>
+        <div class="content">
+            <div class="sphere">
+                <div class="sphere-name">Religion</div>
+                <div class="sphere-description">
+                    Dans notre mission, nous comprenons la religion comme la base spirituelle qui guide tous les aspects de la vie, visant un impact positif sur la société à travers les principes chrétiens.
+                </div>
+            </div>
+
+            <div class="sphere">
+                <div class="sphere-name">Famille</div>
+                <div class="sphere-description">
+                    Nous encourageons le renforcement de la famille en tant qu'unité fondamentale de la société, en promouvant des valeurs qui créent un environnement harmonieux et sain.
+                </div>
+            </div>
+
+            <div class="sphere">
+                <div class="sphere-name">Gouvernement</div>
+                <div class="sphere-description">
+                    À travers nos projets, nous soutenons la transformation des gouvernements vers la justice, l'équité et la transparence, influencés par les principes de l'Évangile.
+                </div>
+            </div>
+
+            <div class="sphere">
+                <div class="sphere-name">Éducation</div>
+                <div class="sphere-description">
+                    Nous croyons que l'éducation est fondamentale pour le développement d'individus complets et engagés, avec une éducation qui valorise à la fois les aspects académiques et éthiques.
+                </div>
+            </div>
+
+            <div class="sphere">
+                <div class="sphere-name">Économie</div>
+                <div class="sphere-description">
+                    Nous promouvons la création de modèles économiques qui génèrent bien-être et prospérité selon les principes chrétiens de générosité, d'honnêteté et de justice.
+                </div>
+            </div>
+
+            <div class="sphere">
+                <div class="sphere-name">Art et Culture</div>
+                <div class="sphere-description">
+                    Nous cherchons à diffuser l'art et la culture qui mettent en valeur les valeurs chrétiennes, créant une connexion profonde avec les gens à travers la créativité.
+                </div>
+            </div>
+
+            <div class="sphere">
+                <div class="sphere-name">Médias</div>
+                <div class="sphere-description">
+                    Nous nous efforçons de transformer les médias en canaux qui promeuvent la vérité, la justice et la paix, influencés par les valeurs de l'Évangile.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Les Entreprises du Princi & Co Group</h2>
+        <div class="content">
+
+            <div class="company">
+                <img src="img/editorial.png" alt="Logo Princi Editions" class="company-logo">
+                <div class="company-name">Princi Editions</div>
+                <div class="company-description">
+                    Princi Editions est une maison d'édition axée sur la publication d'œuvres qui promeuvent les valeurs chrétiennes et les principes éthiques, dans le but d'inspirer les lecteurs à vivre une vie pleine en harmonie avec la volonté de Dieu.
+                </div>
+                <a href="https://princi-editions.com" class="btn-info">Visitez le Site</a>
+            </div>
+
+            <div class="company">
+                <img src="img/EVANGELICAL BUSINESS SCHOOL.png" alt="Logo Princi Academy" class="company-logo">
+                <div class="company-name">Princi Academy</div>
+                <div class="company-description">
+                    Princi Academy est un centre de formation spécialisé dans l'éducation d'affaires avec une base chrétienne. Nous offrons des cours qui équipent les étudiants avec les outils nécessaires pour diriger avec intégrité et excellence dans tous les secteurs.
+                </div>
+                <a href="https://princi-academy.com" class="btn-info">Visitez le Site</a>
+            </div>
+
+            <div class="company">
+                <img src="img/logo.svg" alt="Logo AACC Psicolegs" class="company-logo">
+                <div class="company-name">AACC Psicolegs</div>
+                <div class="company-description">
+                    AACC Psicolegs offre des services de psychologie clinique, avec un accent sur la santé mentale, le bien-être émotionnel et le soutien spirituel pour aider les individus à mener des vies équilibrées.
+                </div>
+                <a href="https://aacc-psicolegs.com" class="btn-info">Visitez le Site</a>
+            </div>
+
+            <div class="company">
+                <img src="img/assoc.svg" alt="Logo Help New World" class="company-logo">
+                <div class="company-name">Help New World</div>
+                <div class="company-description">
+                    Help New World est une ONG dédiée à aider les autres à aider. Nous offrons des outils et des ressources aux missionnaires et à ceux qui sont engagés à soutenir les communautés dans le besoin.
+                </div>
+                <a href="https://help-new-world.org" class="btn-info">Visitez le Site</a>
+            </div>
+
+            <div class="company">
+                <img src="img/princi general.svg" alt="Logo Princi General Consulting" class="company-logo">
+                <div class="company-name">Princi General Consulting</div>
+                <div class="company-description">
+                    Princi General Consulting offre des solutions de conseil en affaires complètes, en se concentrant sur l'amélioration des processus, la gestion de projets et le leadership éthique.
+                </div>
+                <a href="https://princigeneralconsulting.com" class="btn-info">Visitez le Site</a>
+            </div>
+
+            <div class="company">
+                <img src="img/revista.png" alt="Logo Voces del Mundo" class="company-logo">
+                <div class="company-name">Voces del Mundo</div>
+                <div class="company-description">
+                    Voces del Mundo est une revue qui promeut la diversité, la culture et l'échange d'idées pour créer un impact positif dans le monde. Nous offrons une plateforme pour des voix diverses qui promeuvent la compréhension et le respect mutuel.
+                </div>
+                <a href="https://voces-del-mundo.com" class="btn-info">Visitez le Site</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Princi & Co Group | <a href="privacy-policy.html">Politique de Confidentialité</a> | <a href="terms.html">Termes et Conditions</a></p>
+    </footer>
+
+</body>
+</html>

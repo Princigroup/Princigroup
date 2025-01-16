@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Princi & Co Group</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4; /* Fond clair */
+            color: #333333; /* Texte gris foncé */
+        }
+        header {
+            background-image: url('img/laptop-1478822_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        header img {
+            max-width: 200px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid #996e4c; /* Bordure avec couleur de la marque */
+            transition: transform 0.3s ease;
+        }
+        header img:hover {
+            transform: scale(1.1);
+        }
+        header h1 {
+            font-size: 3em;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            line-height: 1.6;
+        }
+        .buttons {
+            margin-top: 30px;
+        }
+        .buttons a {
+            background-color: #0066cc; /* Bleu fiable */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            display: inline-block;
+            font-size: 1.2em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .buttons a:hover {
+            background-color: #005bb5; /* Bleu plus foncé */
+            transform: scale(1.05);
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .language-select {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .language-select select {
+            padding: 5px;
+            font-size: 1em;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .language-select select:hover {
+            background-color: #c4ad9c;
+        }
+        .valores-text {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 900px;
+            text-align: left;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c1d13; /* Marron foncé */
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 20px;
+        }
+        ul li strong {
+            font-size: 1.3em;
+            color: #000;
+        }
+        ul li strong span {
+            color: #9e704f; /* Couleur mise en valeur */
+            font-weight: bold;
+        }
+        ul li p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/sin fondo.svg" alt="Princi & Co Group">
+        <div>
+            <h1 style="text-shadow: 3px 3px 5px #301d0f, 1px 1px 2px #D2B48C;">Princi & Co Group</h1>
+            <p style="text-shadow: 2px 2px 4px #301d0f, 1px 1px 1px #D2B48C;">Transformer des vies et des entreprises avec un but divin</p>
+        </div>
+        <div class="buttons">
+            <a href="vision-mission.html">Découvrez notre vision</a>
+            <a href="companies.html">Explorez nos entreprises</a>
+        </div>
+        <div class="language-select">
+            <select id="language-selector" onchange="window.location.href = this.value;">
+                <option value="index-es.html">Español</option>
+                <option value="index.html">English</option>
+                <option value="index-fr.html" selected>Français</option>
+                <option value="index-it.html">Italiano</option>
+            </select>
+        </div>
+    </header>
+    <nav>
+    <a href="index-fr.html">Accueil</a>
+    <a href="a-propos.html">Qui sommes-nous</a>
+    <a href="vision-mission.fr.html">Vision & Mission</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+</nav>
+    <section class="section">
+        <h2>Nos Valeurs</h2>
+        <div class="valores-text">
+            <p>Chez Princi & Co Group, nous prions et rendons grâce au Seigneur de nous avoir guidés dans l'établissement de cette déclaration de valeurs, qui sert de base à notre culture d'entreprise inspirée par le Christ. Chaque lettre de "ADORATION VRAIE" représente une valeur qui reflète notre engagement à honorer Dieu dans tout ce que nous faisons :</p>
+            <ul>
+                <li><strong><span>T</span>ruth (Vérité):</strong> Nous vivons et promouvons la vérité absolue de la Parole de Dieu dans toutes nos actions et décisions.</li>
+                <li><strong><span>R</span>ighteousness (Justice):</strong> Nous recherchons la justice divine, agissant avec intégrité et droiture, reflétant le caractère du Christ.</li>
+                <li><strong><span>U</span>nity (Unité):</strong> Nous favorisons l'unité dans le corps du Christ, collaborant en tant que corps unique pour accomplir Son dessein.</li>
+                <li><strong><span>E</span>xcellence (Excellence):</strong> Nous travaillons avec excellence, comme pour le Seigneur, cherchant toujours à Le glorifier par notre effort et notre dévouement.</li>
+                <li><strong><span>W</span>orship (Adoration):</strong> Tout ce que nous faisons est une expression d'adoration à Dieu, reconnaissant Sa souveraineté et Sa gloire.</li>
+                <li><strong><span>O</span>bedience (Obéissance):</strong> Nous marchons dans l'obéissance à la direction de Dieu, nous confiant pleinement dans Son plan parfait.</li>
+                <li><strong><span>R</span>espect (Respect):</strong> Nous honorons chaque personne comme une création de Dieu, agissant avec humilité, empathie et compassion.</li>
+                <li><strong><span>S</span>tewardship (Gestion):</strong> Nous gérons fidèlement les ressources que Dieu nous confie, les utilisant pour Son royaume et Sa gloire.</li>
+                <li><strong><span>H</span>ope (Espérance):</strong> Nous sommes des porteurs d'espoir, montrant l'amour du Christ et Sa promesse de vie éternelle à chaque instant.</li>
+                <li><strong><span>I</span>ntegrity (Intégrité):</strong> Nous maintenons un témoignage irréprochable, reflétant les valeurs du Royaume dans tous les aspects de notre vie et de notre entreprise.</li>
+                <li><strong><span>P</span>urpose (But):</strong> Nous reconnaissons que nous avons été appelés à un but divin et nous travaillons pour l'accomplir avec obéissance et foi.</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Princi & Co Group. Tous droits réservés.</p>
+        <div>
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">LinkedIn</a>
+        </div>
+        <p><a href="politique-de-confidentialite.html">Politique de Confidentialité</a></p>
+    </footer>
+</body>
+</html>
