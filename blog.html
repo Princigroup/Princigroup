@@ -120,15 +120,27 @@
             background-color: #555;
         }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
+     body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que la página ocupe al menos la altura de la ventana */
+    margin: 0;
+}
+
+footer {
+    background-color: #222; /* Color de fondo del footer */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de fuente */
+    position: relative; /* Permite ajustarlo al diseño */
+    bottom: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+}
+
+main {
+    flex: 1; /* Permite que el contenido principal se expanda y empuje el footer hacia abajo */
+}
 
         /* Estilos responsivos */
         @media (max-width: 768px) {
