@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entreprises - Princi & Co Group</title>
+    <title>Companies - Princi & Co Group</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
-        }
-        header {
-            background: #f4f4f4;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header img {
-            max-width: 150px;
-        }
-        header h1 {
-            font-size: 2.5em;
+            background-color: #f4f4f4;
             color: #333;
         }
-        header p {
-            font-size: 1.2em;
-            margin: 10px 0;
+        header {
+            background-image: url('erol-ahmed-FTy5VSGIfiQ-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            position: relative;
+        }
+        header h1 {
+            color: white;
+            padding: 20px;
+            font-size: 2.5em;
+            margin: 0;
+            position: relative;
+            z-index: 1;
         }
         nav {
-            background-color: #333;
+            background-color: #444;
             color: white;
             padding: 10px;
             text-align: center;
@@ -41,116 +44,150 @@
         nav a:hover {
             text-decoration: underline;
         }
-        .section {
-            padding: 20px;
-            text-align: center;
+        section {
+            padding: 30px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Uniform spacing between blocks */
+            justify-content: center; /* Centers the blocks horizontally */
         }
-        .section h2 {
+        section h2 {
+            font-size: 2em;
             color: #333;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .company {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: calc(50% - 20px); /* Dynamic adjustment for two blocks with the gap */
+            margin: 0; /* Removes additional margins */
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effect */
+        }
+        .company:hover {
+            transform: translateY(-10px); /* Moves the block upwards on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+        }
+        .company img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .btn-info {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-info:hover {
+            background-color: #0056b3;
         }
         footer {
-            background: #222;
+            background-color: #222;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            margin-top: 40px;
         }
         footer a {
-            color: white;
-            margin: 0 5px;
+            color: #007BFF;
             text-decoration: none;
         }
         footer a:hover {
-            text-decoration: underline;
-        }
-        .empresa {
-            margin-bottom: 20px;
-        }
-        .empresa h2 {
-            color: #007BFF;
-        }
-        .empresa p {
-            font-size: 1.1em;
-            color: #555;
-        }
-        .empresa a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .empresa a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
+<header>
+    <h1>Princi & Co Group Companies</h1>
+</header>
+
 <nav>
-    <a href="index-es.html">Inicio</a>
-    <a href="index-en.html">Home</a>
-    <a href="index-fr.html">Accueil</a>
-    <a href="index-it.html">Inizio</a>
-    <a href="a-propos.html">À propos de nous</a>
-    <a href="entreprises.html">Entreprises</a>
-    <a href="vision-mission.html">Vision et Mission</a>
-    <a href="blog.html">Blog</a>
+    <a href="index.html">Home</a>
+    <a href="about-us.html">About Us</a>
+    <a href="vision-mission-en.html">Vision & Mission</a>
+    <a href="blog-en.html">Blog</a>
     <a href="contact.html">Contact</a>
 </nav>
 
-<header>
-    <img src="logo.svg" alt="Princi & Co Group">
-    <h1>Entreprises du Groupe Princi & Co</h1>
-    <p>Explorez les différentes entreprises qui composent notre groupe et contribuent au changement global.</p>
-</header>
+<section>
+    <h2>Our Companies</h2>
 
-<section class="section">
-    <h2>Nos Entreprises</h2>
-    <p>Découvrez les entreprises qui font partie du Groupe Princi & Co :</p>
-
-    <div class="empresa">
-        <h2>Princi Editions</h2>
-        <p>Une maison d'édition dédiée à la publication de livres et de matériels inspirants et éducatifs, avec une attention particulière aux projets tels que les trilogies, la littérature chrétienne et les contenus qui favorisent le développement personnel et spirituel.</p>
-        <a href="Princi-editions.html">En savoir plus sur Princi Editions</a>
+    <!-- First pair of companies -->
+    <div class="company">
+        <h3>Princi Editions</h3>
+        <img src="editorial.png" alt="Princi Editions">
+        <p>Discover a publishing house that blends literary excellence with Christian values. At Princi Editions, we specialize in publishing inspiring books, educational materials, and literature that transforms lives. We work alongside visionary authors to bring stories and projects that impact society globally. Whether you're looking to read or publish, you'll find a space for creativity and faith here.</p>
+        <a href="https://princi-editions.com" class="btn-info">More Information</a>
+    </div>
+    
+    <div class="company">
+        <h3>Princi Academy</h3>
+        <img src="EVANGELICAL BUSINESS SCHOOL.png" alt="Princi Academy">
+        <p>Princi Academy is more than an educational institution; it is a place where transformational leaders are born. Our comprehensive training covers leadership, business, and key areas to influence society's spheres. With an international focus and solid values, we train those who want to make a difference and take their projects to the next level.</p>
+        <a href="https://princi-academy.com" class="btn-info">More Information</a>
     </div>
 
-    <div class="empresa">
-        <h2>Princi Academy</h2>
-        <p>Un centre éducatif international dédié à la formation en leadership, affaires et autres domaines clés, visant à transformer et améliorer la société.</p>
-        <a href="Princi-academy.html">En savoir plus sur Princi Academy</a>
+    <!-- Second pair of companies -->
+    <div class="company">
+        <h3>Princi General Consulting</h3>
+        <img src="princi general.svg" alt="Princi General Consulting">
+        <p>At Princi General Consulting, we specialize in designing tailored solutions for companies that want to grow and adapt to a competitive environment. Our expertise includes strategic consulting, business development, and international trade advisory. We help our clients connect with global opportunities, ensuring their sustainable success.</p>
+        <p>With a multidisciplinary approach and a highly qualified team, we support you from planning to execution, ensuring results that turn your vision into reality.</p>
+        <a href="https://princigeneralconsulting.com" class="btn-info">More Information</a>
+    </div>
+    
+    <div class="company">
+        <h3>AACC Psicolegs</h3>
+        <img src="logo.svg" alt="AACC Psicolegs">
+        <p>At AACC Psicolegs, we work to help each person find balance and well-being in their life. We offer personalized psychological services, including innovative tools for emotional and mental development. Our team of experts guides clients every step of the way towards personal growth, adapting to their unique needs and goals.</p>
+        <a href="https://aacc-psicolegs.com" class="btn-info">More Information</a>
     </div>
 
-    <div class="empresa">
-        <h2>AACC Psicolegs</h2>
-        <p>Nous offrons des services psychologiques et de bien-être avec une approche globale de la santé mentale.</p>
-        <a href="AACC-psicolegs.html">En savoir plus sur AACC Psicolegs</a>
+    <!-- Third pair of companies -->
+    <div class="company">
+        <h3>Help New World</h3>
+        <img src="assoc.svg" alt="Help New World">
+        <p>Help New World is an NGO dedicated to empowering those who make a difference. Our mission is simple yet powerful: "Helping others to help." We provide tools, resources, and support to missionaries and people committed to humanitarian projects. Together, we build a fairer world, where each effort multiplies to reach more lives.</p>
+        <a href="https://helpnewworld.com" class="btn-info">More Information</a>
+    </div>
+    
+    <div class="company">
+        <h3>Voces del Mundo</h3>
+        <img src="revista.png" alt="Voces del Mundo">
+        <p>Voces del Mundo is an international magazine that gives voice to stories, ideas, and testimonies that inspire. Through its articles, resources, and unique perspectives, we connect readers worldwide with the truth of the Gospel and the positive impact it generates in society. Join this platform to explore, learn, and be part of a global movement.</p>
+        <a href="https://vocesdelmundo.com" class="btn-info">More Information</a>
     </div>
 
-    <div class="empresa">
-        <h2>Help New World</h2>
-        <p>Une ONG avec la vision d'"aider les autres à aider".</p>
-        <a href="Help-new-world.html">En savoir plus sur Help New World</a>
-    </div>
-
-    <div class="empresa">
-        <h2>Princi General Consulting</h2>
-        <p>Consultance stratégique pour les entreprises et projets, avec une approche fondée sur des principes chrétiens.</p>
-        <a href="Princi-general-consulting.html">En savoir plus sur Princi General Consulting</a>
-    </div>
-
-    <div class="empresa">
-        <h2>Voces del Mundo</h2>
-        <p>Un magazine international qui sert de plateforme pour partager des idées, des témoignages et des histoires impactantes.</p>
-        <a href="Voces-del-mundo.html">En savoir plus sur Voces del Mundo</a>
-    </div>
 </section>
 
 <footer>
-    <p>© 2025 Princi & Co Group. Tous droits réservés.</p>
-    <div>
-        <a href="#">Facebook</a> | 
-        <a href="#">Instagram</a> | 
-        <a href="#">LinkedIn</a>
-    </div>
-    <p><a href="politique-de-confidentialite.html">Politique de Confidentialité</a></p>
+    <p>&copy; 2025 Princi & Co Group. All rights reserved.</p>
+    <p>Follow us on <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
 </footer>
+
+</body>
+</html>
 
 </body>
 </html>
