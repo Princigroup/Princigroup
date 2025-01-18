@@ -59,23 +59,22 @@
             background-color: #666;
         }
 
-        .post-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
+       .post-container {
+    display: flex;
+    flex-direction: column; /* Cambiar a disposición en columna */
+    align-items: center; /* Centrar los elementos */
+    padding: 20px;
+}
 
-        .post {
-            background-color: white;
-            padding: 20px;
-            width: 30%;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
+       .post {
+    background-color: white;
+    padding: 20px;
+    width: 100%; /* Cambiar de 30% a 100% */
+    margin: 10px 0; /* Ajustar márgenes: margen arriba/abajo de 10px, izquierda/derecha de 0 */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
         .post:hover {
             transform: scale(1.05);
         }
