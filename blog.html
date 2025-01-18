@@ -1,142 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Princi & Co Group</title>
+    <meta name="description" content="Princi & Co Group's blog shares insights on leadership, business strategies, education, and Christian perspectives on social change.">
+    <meta name="keywords" content="Princi & Co Group, Christian leadership, business success, educational strategies, social change, Christian business">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Princi & Co Group Blog">
+    <meta property="og:description" content="Princi & Co Group's blog shares insights on leadership, business strategies, education, and Christian perspectives on social change.">
+    <meta property="og:image" content="path_to_image.jpg">
+    <meta property="og:url" content="URL_of_the_blog_page">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Princi & Co Group Blog">
+    <meta name="twitter:description" content="Princi & Co Group's blog shares insights on leadership, business strategies, education, and Christian perspectives on social change.">
+    <meta name="twitter:image" content="path_to_image.jpg">
+    <title>Princi & Co Group Blog</title>
     <style>
-        body 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
         header {
-    background-image: url('photos-by-lanty-8GtqUWGMRRw-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Superposición oscura */
-    z-index: 0; /* Asegura que la superposición quede debajo del contenido */
-}
-
-header h1 {
-    position: relative;
-    z-index: 1; /* Mantiene el texto por encima de la superposición */
-    font-size: 2.5em;
-    font-weight: bold;
-    margin: 0;
-    padding: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
-}
-nav {
             background-color: #333;
             color: white;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
         nav a {
             color: white;
-            margin: 0 15px;
             text-decoration: none;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
         }
+
         nav a:hover {
-            text-decoration: underline;
+            background-color: #666;
         }
-        
-        section {
-            padding: 30px;
-            margin: 20px auto;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 1200px;
-        }
-        section h2 {
-            font-size: 2em;
-            color: #333;
-            width: 100%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .post {
+
+        .post-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 90%;
-            margin: 20px auto;
+            flex-wrap: wrap;
+            justify-content: space-around;
             padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
+
+        .post {
+            background-color: white;
+            padding: 20px;
+            width: 30%;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .post:hover {
+            transform: scale(1.05);
+        }
+
+        .post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
         .post h3 {
             font-size: 1.8em;
-            color: #007BFF;
-            margin-bottom: 15px;
+            color: #333;
         }
+
         .post p {
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 15px;
-        }
-        .post img {
-            max-width: 150px;
-            height: auto;
-            margin-bottom: 15px;
-            border-radius: 8px;
-        }
-        .btn-read {
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
             font-size: 1em;
-            text-decoration: none;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .btn-read {
             display: inline-block;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
             margin-top: 10px;
         }
+
         .btn-read:hover {
-            background-color: #0056b3;
+            background-color: #555;
         }
+
         footer {
-            background-color: #222;
+            background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
-        footer a {
-            color: #007BFF;
-            text-decoration: none;
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .post {
+                width: 45%;
+            }
+
+            nav a {
+                margin: 5px;
+            }
         }
-        footer a:hover {
-            text-decoration: underline;
+
+        @media (max-width: 480px) {
+            header {
+                height: 40vh;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .post {
+                width: 100%;
+            }
+
+            .btn-read {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Blog del Grupo Princi & Co</h1>
-</header>
+    <header>
+        <h1>Princi & Co Group Blog</h1>
+    </header>
 
-<nav>
+   <nav>
     <a href="index-es.html">Inicio</a>
     <a href="sobre-nosotros.html">Sobre Nosotros</a>
     <a href="vision-mision.html">Visión y Misión</a>
@@ -242,13 +268,32 @@ nav {
     <a href="post-educacion-cambio-social.html" class="btn-read">Leer Más</a>
 </div>
 
+    <footer>
+        <p>&copy; 2025 Princi & Co Group. Todos los derechos reservados.</p>
+    </footer>
 
-</section>
-
-<footer>
-    <p>&copy; 2025 Princi & Co Group. Todos los derechos reservados.</p>
-    <p>Síguenos en <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
-</footer>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "The Importance of Transformational Leadership: A Christian Approach",
+        "image": "leadership.jpg",
+        "author": "Tamara Pinillos Blanco",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Princi & Co Group",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "path_to_logo.jpg"
+            }
+        },
+        "datePublished": "2025-01-18",
+        "description": "Transformational leadership from a Christian perspective, examining how Jesus' leadership principles can be applied today."
+    }
+    </script>
 
 </body>
+
 </html>
+
