@@ -52,7 +52,8 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            gap: 20px; /* Espaciado uniforme entre bloques */
+            justify-content: center; /* Centra los bloques horizontalmente */
         }
         section h2 {
             font-size: 2em;
@@ -66,13 +67,18 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 48%; /* Asegura que cada empresa ocupe la mitad del ancho */
-            margin: 10px;
+            width: calc(50% - 20px); /* Ajuste dinámico para dos bloques con el gap */
+            margin: 0; /* Remueve márgenes adicionales */
             padding: 30px;
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición */
+        }
+        .empresa:hover {
+            transform: translateY(-10px); /* Desplazamiento al pasar el ratón */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efecto de sombra al pasar el ratón */
         }
         .empresa img {
             max-width: 150px;
@@ -89,6 +95,7 @@
             text-decoration: none;
             display: inline-block;
             margin-top: 10px;
+            transition: background-color 0.3s ease;
         }
         .btn-info:hover {
             background-color: #0056b3;
@@ -107,31 +114,6 @@
         footer a:hover {
             text-decoration: underline;
         }
-        section {
-        padding: 30px;
-        margin: 20px;
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px; /* Espaciado uniforme entre bloques */
-        justify-content: center; /* Centra los bloques horizontalmente */
-    }
-    .empresa {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: calc(50% - 20px); /* Ajuste dinámico para dos bloques con el gap */
-        margin: 0; /* Remueve márgenes adicionales */
-        padding: 30px;
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
-</style>
     </style>
 </head>
 <body>
