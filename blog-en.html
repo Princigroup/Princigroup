@@ -60,32 +60,44 @@
         }
 
         .post-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los bloques horizontalmente */
+    padding: 20px;
+}
 
-        .post {
-            background-color: white;
-            padding: 20px;
-            width: 30%;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
+.post {
+    background-color: white;
+    padding: 30px; /* Incrementa el espacio interno */
+    width: 80%; /* Ocupa el 80% del ancho del contenedor */
+    margin: 20px; /* Espaciado entre bloques */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+    transition: all 0.3s ease;
+}
 
-        .post:hover {
-            transform: scale(1.05);
-        }
+.post:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+}
 
-        .post img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
+.post img {
+    max-width: 100%; /* Mantiene las imágenes proporcionales */
+    height: auto;
+    border-radius: 8px;
+}
 
+@media (max-width: 768px) {
+    .post {
+        width: 90%; /* Más ancho en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .post {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        padding: 20px; /* Ajuste de espacio interno */
+    }
+}
         .post h3 {
             font-size: 1.8em;
             color: #333;
@@ -229,7 +241,7 @@
 </div>
 <div class="post">
     <h3>The Role of Education in Social Change: A Christian Approach</h3>
-    <img src="educacio.jpg" alt="Education for Social Change">
+    <img src="educacion.jpg" alt="Education for Social Change">
     <p>Education is not just a tool for acquiring knowledge, but a powerful means to transform societies. From a Christian perspective, education plays a fundamental role in social change, as it equips us not only to improve our quality of life but also to fulfill the biblical mandate to love and serve others.</p>
     
     <h4>1. Education as a Tool for Social Justice</h4>
