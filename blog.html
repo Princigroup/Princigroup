@@ -58,32 +58,42 @@
             background-color: #666;
         }
 
-        .post-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
+       .post-container {
+    display: flex;
+    justify-content: space-between; /* Espaciado uniforme entre bloques */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px;
+}
 
-        .post {
-            background-color: white;
-            padding: 20px;
-            width: 30%;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
+.post {
+    background-color: white;
+    padding: 20px;
+    width: 30%; /* Cada publicación ocupa el 30% del ancho del contenedor */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
 
-        .post:hover {
-            transform: scale(1.05);
-        }
+.post:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+}
 
-        .post img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
+.post img {
+    max-width: 100%; /* Asegura que las imágenes se ajusten al ancho del bloque */
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .post-container {
+        flex-direction: column; /* En pantallas pequeñas, los bloques estarán en una columna */
+    }
+
+    .post {
+        width: 100%; /* Cada bloque ocupa el 100% del ancho */
+    }
+}
 
         .post h3 {
             font-size: 1.8em;
@@ -171,10 +181,33 @@
 
    <section>
     <h2>Últimas Publicaciones</h2>
-
+<div class="post-container">
     <div class="post">
-    <h3>La Importancia del Liderazgo Transformacional: Un Enfoque Cristiano</h3>
-    <img src="liderazgo.jpg" alt="Liderazgo Transformacional">
+        <img src="liderazgo.jpg" alt="Publicación 1">
+        <h3>La Importancia del Liderazgo Transformacional: Un Enfoque Cristiano</h3>
+        <p>El liderazgo transformacional se ha convertido en un concepto esencial en el mundo actual, especialmente dentro de las organizaciones que buscan un cambio profundo y sostenible. Sin embargo, el modelo más poderoso de liderazgo transformacional no lo encontramos en teorías modernas o en grandes figuras del ámbito empresarial, sino en la vida y enseñanzas de Jesucristo. Jesús no solo fue un líder en el sentido tradicional, sino un líder transformacional que cambió el curso de la historia, ofreciendo un ejemplo de liderazgo que impactó las vidas de millones de personas.</p>
+    
+    <p><strong>El Liderazgo de Jesús: Un Modelo Transformacional</strong></p>
+
+    <p>El liderazgo transformacional se caracteriza por la capacidad de inspirar y motivar a los demás hacia un propósito común, buscando no solo resultados a corto plazo, sino también el desarrollo personal y espiritual de los individuos involucrados. Jesús mostró, a través de su vida y ministerio, cómo este tipo de liderazgo puede transformar corazones y comunidades.</p>
+
+    <p><strong>1. Visión Clara y Profunda</strong></p>
+    <p>Jesús vino al mundo con una misión clara: salvar a la humanidad y ofrecer la vida eterna. Su visión era mucho más que mejorar las circunstancias temporales, Él vino a transformar la vida de las personas en su totalidad, llevando a cada individuo a un nivel superior de entendimiento y relación con Dios. Al igual que un líder transformacional, Jesús tenía una visión que trascendía lo visible y lo inmediato, llevando a sus seguidores a un propósito eterno.</p>
+
+    <p><strong>2. Inspiración y Servicio</strong></p>
+    <p>Jesús no solo dio instrucciones, sino que inspiró a sus seguidores a través de su ejemplo de servicio y sacrificio. En el Evangelio de Juan 13:14-15, Jesús se arrodilló para lavar los pies de sus discípulos, un acto que reflejaba su humildad y disposición para servir a los demás. Este gesto no solo mostró su humildad, sino que también enseñó a sus discípulos el verdadero significado del liderazgo: liderar sirviendo a los demás.</p>
+
+    <p><strong>3. Desarrollo de las Personas</strong></p>
+    <p>Jesús no solo dirigió a sus discípulos, sino que los formó, enseñándoles y desafiándolos a ser mejores, a crecer en su fe y a expandir el Reino de Dios. En su relación con los discípulos, Jesús los alentó a pensar más allá de sí mismos, a mirar a las personas con compasión y a vivir una vida de obediencia a la voluntad de Dios.</p>
+
+    <p><strong>4. Empoderamiento a Través de la Confianza</strong></p>
+    <p>Jesús empoderó a sus discípulos dándoles autoridad para sanar, predicar y hacer milagros. En Mateo 28:19-20, Jesús les dio la Gran Comisión, confiándoles la tarea de ir a todas las naciones y hacer discípulos. A pesar de ser humanos imperfectos, Jesús creyó en su potencial y los preparó para enfrentar el futuro con valentía y fe.</p>
+
+    <p><strong>5. Enseñanza y Disciplina con Amor</strong></p>
+    <p>A lo largo de su ministerio, Jesús también enseñó a través de la corrección amorosa. En Mateo 16:23, cuando Pedro intentó apartarlo de su misión, Jesús lo corrigió con firmeza pero sin perder su amor. El liderazgo transformacional cristiano incluye la capacidad de corregir con amor, mostrando a las personas el camino recto sin dejar de ser compasivos.</p>
+
+    <p><strong>Conclusión: El Liderazgo Transformacional Cristiano</strong></p>
+    <p>El liderazgo transformacional cristiano es un liderazgo que va más allá de la gestión de equipos o proyectos. Es un liderazgo basado en el amor, el servicio, la humildad y la visión de un propósito eterno. Jesús nos mostró que el verdadero liderazgo no está en el poder o la autoridad, sino en la capacidad de inspirar y transformar a los demás. Al seguir su ejemplo, podemos ser líderes que no solo impactan el presente, sino que transforman el futuro de quienes nos rodean, guiándolos hacia un propósito más grande que nosotros mismos: la voluntad de Dios.</p>
     <p>El liderazgo transformacional se ha convertido en un concepto esencial en el mundo actual, especialmente dentro de las organizaciones que buscan un cambio profundo y sostenible. Sin embargo, el modelo más poderoso de liderazgo transformacional no lo encontramos en teorías modernas o en grandes figuras del ámbito empresarial, sino en la vida y enseñanzas de Jesucristo. Jesús no solo fue un líder en el sentido tradicional, sino un líder transformacional que cambió el curso de la historia, ofreciendo un ejemplo de liderazgo que impactó las vidas de millones de personas.</p>
     
     <p><strong>El Liderazgo de Jesús: Un Modelo Transformacional</strong></p>
@@ -199,14 +232,12 @@
     <p><strong>Conclusión: El Liderazgo Transformacional Cristiano</strong></p>
     <p>El liderazgo transformacional cristiano es un liderazgo que va más allá de la gestión de equipos o proyectos. Es un liderazgo basado en el amor, el servicio, la humildad y la visión de un propósito eterno. Jesús nos mostró que el verdadero liderazgo no está en el poder o la autoridad, sino en la capacidad de inspirar y transformar a los demás. Al seguir su ejemplo, podemos ser líderes que no solo impactan el presente, sino que transforman el futuro de quienes nos rodean, guiándolos hacia un propósito más grande que nosotros mismos: la voluntad de Dios.</p>
     
-    <a href="post1.html" class="btn-read">Leer Más</a>
-</div>
-
-
-   <div class="post">
-    <h3>Estrategias para un Negocio Exitoso: Una Perspectiva Cristiana</h3>
-    <img src="negocio-exitoso.jpg" alt="Estrategias para un Negocio Exitoso">
-    <p><strong>El éxito en los negocios no solo se mide por las ganancias o el crecimiento financiero, sino por el impacto que tenemos en la vida de las personas y en la sociedad.</strong> Como cristianos, creemos que Dios nos llama a ser buenos mayordomos de los recursos que nos ha dado y a liderar con integridad, sabiduría y amor. En este artículo, exploraremos estrategias para construir un negocio exitoso desde una perspectiva cristiana, basándonos en principios bíblicos que guían nuestra vida y nuestras decisiones.</p>
+       <a href="post1.html" class="btn-read">Leer Más</a>
+    </div>
+    <div class="post">
+        <img src="success.jpg" alt="Publicación 2">
+        <h3>Estrategias para un Negocio Exitoso: Una Perspectiva Cristiana</h3>
+       <p><strong>El éxito en los negocios no solo se mide por las ganancias o el crecimiento financiero, sino por el impacto que tenemos en la vida de las personas y en la sociedad.</strong> Como cristianos, creemos que Dios nos llama a ser buenos mayordomos de los recursos que nos ha dado y a liderar con integridad, sabiduría y amor. En este artículo, exploraremos estrategias para construir un negocio exitoso desde una perspectiva cristiana, basándonos en principios bíblicos que guían nuestra vida y nuestras decisiones.</p>
     <h4>1. Tener una Visión Clara y Objetivos que Honren a Dios</h4>
     <p><em>Proverbios 16:3 dice: "Encomienda a Jehová tus obras, y tus pensamientos serán afirmados."</em> Tener una visión clara no solo es esencial para dirigir un negocio, sino que es vital asegurarse de que esa visión honre a Dios. Nuestros objetivos deben estar alineados con Su propósito y buscar el bien común, no solo el beneficio personal. Al encomendar nuestras empresas a Dios y buscar Su voluntad, podemos tener la seguridad de que Él guiará nuestros pasos.</p>
 
@@ -235,13 +266,11 @@
     <p><em>Salmo 127:1: "Si Jehová no edificare la casa, en vano trabajan los que la edifican."</em> Finalmente, recordemos que todo éxito viene de Dios. El éxito en los negocios no solo se trata de alcanzar metas personales, sino de ser un testimonio vivo de la gracia y la fidelidad de Dios en nuestras vidas. Al seguir estos principios cristianos, podemos edificar negocios que no solo prosperen en el sentido material, sino que también impacten positivamente a las personas y a la sociedad, llevando el amor y la luz de Cristo al mundo.</p>
 
     <a href="post2.html" class="btn-read">Leer Más</a>
-</div>
-
-
+    </div>
     <div class="post">
-    <h3>El Rol de la Educación en el Cambio Social: Un Enfoque Cristiano</h3>
-    <img src="educacion-cambio-social.jpg" alt="Educación para el Cambio Social">
-    <p>La educación no es solo una herramienta para adquirir conocimientos, sino un medio poderoso para transformar sociedades. Desde la perspectiva cristiana, la educación tiene un rol fundamental en el cambio social, ya que nos capacita no solo para mejorar nuestra calidad de vida, sino también para cumplir con el mandato bíblico de amar y servir a los demás.</p>
+        <img src="educacion.jpg" alt="Publicación 3">
+        <h3>El Rol de la Educación en el Cambio Social: Un Enfoque Cristiano< 3</h3>
+         <p>La educación no es solo una herramienta para adquirir conocimientos, sino un medio poderoso para transformar sociedades. Desde la perspectiva cristiana, la educación tiene un rol fundamental en el cambio social, ya que nos capacita no solo para mejorar nuestra calidad de vida, sino también para cumplir con el mandato bíblico de amar y servir a los demás.</p>
     
     <h4>1. La Educación como Herramienta de Justicia Social</h4>
     <p>La justicia social es uno de los principios más importantes en la Biblia. Dios nos llama a defender a los oprimidos y a luchar por la igualdad y el respeto entre todos. En Proverbios 31:8-9, se nos instruye a "hablar por aquellos que no pueden hablar, por los derechos de todos los desamparados", y la educación es una forma poderosa de hacerlo. Mediante el acceso a una educación equitativa, podemos capacitar a los marginados y darles las herramientas necesarias para mejorar su situación y defender sus derechos.</p>
@@ -265,9 +294,9 @@
     <p>La educación no solo forma individuos capacitados, sino que tiene el poder de transformar sociedades enteras. En una perspectiva cristiana, la educación es una herramienta de justicia, sabiduría, empoderamiento y paz. A través de ella, podemos ser agentes de cambio, liderando con humildad, sirviendo a los demás y buscando siempre glorificar a Dios en todo lo que hacemos. Como cristianos, debemos ser defensores de una educación que no solo capacite en el ámbito académico, sino que también forme el carácter y el corazón de los individuos para construir un mundo más justo, compasivo y lleno de esperanza.</p>
     
     <a href="post-educacion-cambio-social.html" class="btn-read">Leer Más</a>
-</div>
+    </div>
 
-    <footer>
+     <footer>
         <p>&copy; 2025 Princi & Co Group. Todos los derechos reservados.</p>
     </footer>
 
