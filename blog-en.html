@@ -1,145 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Princi & Co Group</title>
+    <meta name="description" content="Princi & Co Group's blog shares insights on leadership, business strategies, education, and Christian perspectives on social change.">
+    <meta name="keywords" content="Princi & Co Group, Christian leadership, business success, educational strategies, social change, Christian business">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Princi & Co Group Blog">
+    <meta property="og:description" content="Princi & Co Group's blog shares insights on leadership, business strategies, education, and Christian perspectives on social change.">
+    <meta property="og:image" content="path_to_image.jpg">
+    <meta property="og:url" content="URL_of_the_blog_page">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Princi & Co Group Blog">
+    <meta name="twitter:description" content="Princi & Co Group's blog shares insights on leadership, business strategies, education, and Christian perspectives on social change.">
+    <meta name="twitter:image" content="path_to_image.jpg">
+    <title>Princi & Co Group Blog</title>
     <style>
-        body 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
         header {
-    background-image: url('photos-by-lanty-8GtqUWGMRRw-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    z-index: 0; /* Ensures the overlay is below the content */
-}
-
-header h1 {
-    position: relative;
-    z-index: 1; /* Keeps the text above the overlay */
-    font-size: 2.5em;
-    font-weight: bold;
-    margin: 0;
-    padding: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow to enhance readability */
-}
-nav {
             background-color: #333;
             color: white;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
         nav a {
             color: white;
-            margin: 0 15px;
             text-decoration: none;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
         }
+
         nav a:hover {
-            text-decoration: underline;
+            background-color: #666;
         }
-        
-        section {
-            padding: 30px;
-            margin: 20px auto;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 1200px;
-        }
-        section h2 {
-            font-size: 2em;
-            color: #333;
-            width: 100%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .post {
+
+        .post-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 90%;
-            margin: 20px auto;
+            flex-wrap: wrap;
+            justify-content: space-around;
             padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
+
+        .post {
+            background-color: white;
+            padding: 20px;
+            width: 30%;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .post:hover {
+            transform: scale(1.05);
+        }
+
+        .post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
         .post h3 {
             font-size: 1.8em;
-            color: #007BFF;
-            margin-bottom: 15px;
+            color: #333;
         }
+
         .post p {
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 15px;
-        }
-        .post img {
-            max-width: 150px;
-            height: auto;
-            margin-bottom: 15px;
-            border-radius: 8px;
-        }
-        .btn-read {
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
             font-size: 1em;
-            text-decoration: none;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .btn-read {
             display: inline-block;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
             margin-top: 10px;
         }
+
         .btn-read:hover {
-            background-color: #0056b3;
+            background-color: #555;
         }
+
         footer {
-            background-color: #222;
+            background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
-        footer a {
-            color: #007BFF;
-            text-decoration: none;
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .post {
+                width: 45%;
+            }
+
+            nav a {
+                margin: 5px;
+            }
         }
-        footer a:hover {
-            text-decoration: underline;
+
+        @media (max-width: 480px) {
+            header {
+                height: 40vh;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .post {
+                width: 100%;
+            }
+
+            .btn-read {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Princi & Co Group Blog</h1>
-</header>
+    <header>
+        <h1>Princi & Co Group Blog</h1>
+    </header>
 
-<nav>
+   <nav>
     <a href="index.html">Home</a>
     <a href="about-us.html">About Us</a>
-    <a href="vision-mission-en.html">Vision and Mission</a>
+    <a href="vision-mission-en.html">Vision & Mission</a>
     <a href="blog-en.html">Blog</a>
     <a href="contact.html">Contact</a>
 </nav>
@@ -149,59 +175,61 @@ nav {
 
     <div class="post">
     <h3>The Importance of Transformational Leadership: A Christian Approach</h3>
-    <img src="leadership.jpg" alt="Transformational Leadership">
-    <p>Transformational leadership has become an essential concept in today's world, especially within organizations that seek profound and sustainable change. However, the most powerful model of transformational leadership is not found in modern theories or in prominent figures of the business world, but in the life and teachings of Jesus Christ. Jesus was not only a leader in the traditional sense, but a transformational leader who changed the course of history, offering an example of leadership that impacted the lives of millions of people.</p>
+    <img src="liderazgo.jpg" alt="Transformational Leadership">
+    <p>Transformational leadership has become an essential concept in today's world, especially within organizations seeking deep and sustainable change. However, the most powerful model of transformational leadership is not found in modern theories or great figures in the business field, but in the life and teachings of Jesus Christ. Jesus was not only a leader in the traditional sense, but a transformational leader who changed the course of history, offering an example of leadership that impacted the lives of millions of people.</p>
     
     <p><strong>Jesus' Leadership: A Transformational Model</strong></p>
 
-    <p>Transformational leadership is characterized by the ability to inspire and motivate others towards a common purpose, seeking not only short-term results but also the personal and spiritual development of the individuals involved. Jesus showed through His life and ministry how this type of leadership can transform hearts and communities.</p>
+    <p>Transformational leadership is characterized by the ability to inspire and motivate others towards a common purpose, seeking not only short-term results but also the personal and spiritual development of the individuals involved. Jesus demonstrated through His life and ministry how this type of leadership can transform hearts and communities.</p>
 
-    <p><strong>1. Clear and Profound Vision</strong></p>
-    <p>Jesus came into the world with a clear mission: to save humanity and offer eternal life. His vision was much more than improving temporary circumstances; He came to transform people's lives entirely, bringing each individual to a higher level of understanding and relationship with God. Like a transformational leader, Jesus had a vision that transcended the visible and immediate, leading His followers to an eternal purpose.</p>
+    <p><strong>1. Clear and Deep Vision</strong></p>
+    <p>Jesus came to the world with a clear mission: to save humanity and offer eternal life. His vision was much more than improving temporary circumstances; He came to transform the lives of people entirely, taking each individual to a higher level of understanding and relationship with God. Like a transformational leader, Jesus had a vision that transcended the visible and the immediate, leading His followers to an eternal purpose.</p>
 
     <p><strong>2. Inspiration and Service</strong></p>
-    <p>Jesus did not only give instructions but inspired His followers through His example of service and sacrifice. In the Gospel of John 13:14-15, Jesus knelt to wash His disciples' feet, an act that reflected His humility and willingness to serve others. This gesture not only showed His humility but also taught His disciples the true meaning of leadership: leading by serving others.</p>
+    <p>Jesus not only gave instructions but inspired His followers through His example of service and sacrifice. In the Gospel of John 13:14-15, Jesus knelt to wash His disciples' feet, an act that reflected His humility and willingness to serve others. This gesture not only showed His humility but also taught His disciples the true meaning of leadership: leading by serving others.</p>
 
-    <p><strong>3. Developing People</strong></p>
-    <p>Jesus did not just lead His disciples, but He trained them, teaching and challenging them to be better, to grow in their faith, and to expand God's Kingdom. In His relationship with the disciples, Jesus encouraged them to think beyond themselves, to look at people with compassion, and to live a life of obedience to God's will.</p>
+    <p><strong>3. People Development</strong></p>
+    <p>Jesus did not only direct His disciples but trained them, teaching them and challenging them to be better, to grow in their faith, and to expand God's Kingdom. In His relationship with the disciples, Jesus encouraged them to think beyond themselves, to look at people with compassion, and to live a life of obedience to God's will.</p>
 
-    <p><strong>4. Empowering Through Trust</strong></p>
+    <p><strong>4. Empowerment Through Trust</strong></p>
     <p>Jesus empowered His disciples by giving them authority to heal, preach, and perform miracles. In Matthew 28:19-20, Jesus gave them the Great Commission, entrusting them with the task of going to all nations and making disciples. Despite being imperfect humans, Jesus believed in their potential and prepared them to face the future with courage and faith.</p>
 
     <p><strong>5. Teaching and Discipline with Love</strong></p>
-    <p>Throughout His ministry, Jesus also taught through loving correction. In Matthew 16:23, when Peter tried to turn Him away from His mission, Jesus rebuked him firmly but without losing His love. Christian transformational leadership includes the ability to correct with love, showing people the right path without ceasing to be compassionate.</p>
+    <p>Throughout His ministry, Jesus also taught through loving correction. In Matthew 16:23, when Peter tried to deter Him from His mission, Jesus corrected him firmly but without losing His love. Christian transformational leadership includes the ability to correct with love, showing people the right path without ceasing to be compassionate.</p>
 
     <p><strong>Conclusion: Christian Transformational Leadership</strong></p>
-    <p>Christian transformational leadership is a leadership that goes beyond managing teams or projects. It is leadership based on love, service, humility, and the vision of an eternal purpose. Jesus showed us that true leadership is not in power or authority but in the ability to inspire and transform others. By following His example, we can be leaders who not only impact the present but transform the future of those around us, guiding them to a purpose greater than ourselves: God's will.</p>
+    <p>Christian transformational leadership is leadership that goes beyond managing teams or projects. It is leadership based on love, service, humility, and the vision of an eternal purpose. Jesus showed us that true leadership is not in power or authority but in the ability to inspire and transform others. By following His example, we can be leaders who not only impact the present but transform the future of those around us, guiding them toward a greater purpose than ourselves: God's will.</p>
     
     <a href="post1.html" class="btn-read">Read More</a>
 </div>
 
    <div class="post">
     <h3>Strategies for a Successful Business: A Christian Perspective</h3>
-    <img src="successful-business.jpg" alt="Strategies for a Successful Business">
-    <p><strong>Success in business is not only measured by profits or financial growth but by the impact we have on people's lives and society.</strong> As Christians, we believe that God calls us to be good stewards of the resources He has given us and to lead with integrity, wisdom, and love. In this article, we will explore strategies for building a successful business from a Christian perspective, based on biblical principles that guide our life and decisions.</p>
+    <img src="success.jpg" alt="Strategies for a Successful Business">
+    <p><strong>Business success is not only measured by profits or financial growth, but by the impact we have on people's lives and society.</strong> As Christians, we believe God calls us to be good stewards of the resources He has given us and to lead with integrity, wisdom, and love. In this article, we will explore strategies to build a successful business from a Christian perspective, based on biblical principles that guide our life and decisions.</p>
     <h4>1. Have a Clear Vision and Goals that Honor God</h4>
-    <p><em>Proverbs 16:3 says: "Commit your works to the Lord, and your plans will be established."</em> Having a clear vision is not only essential for running a business but it is vital to ensure that vision honors God. Our goals should align with His purpose and seek the common good, not just personal gain. By committing our businesses to God and seeking His will, we can be assured that He will guide our steps.</p>
+    <p><em>Proverbs 16:3 says: "Commit your works to the Lord, and your plans will be established."</em> Every successful business begins with a clear vision and the setting of meaningful goals. This vision should not only focus on financial success but also on how the business will serve the community, its employees, and customers. Aligning your vision with God's purpose will help guide you toward a future that glorifies Him.</p>
 
-    <h4>2. Lead with Integrity and Honesty</h4>
-    <p>Integrity is one of the most important qualities of a successful business leader. Proverbs 12:1 says, "Whoever loves discipline loves knowledge, but whoever hates correction is stupid." Leading with integrity means being honest with employees, clients, and partners, even when it is difficult. As Christians, we should always strive to do the right thing, even when no one is watching.</p>
+    <h4>2. Lead with Integrity</h4>
+    <p><em>Proverbs 12:1: "Whoever loves discipline loves knowledge, but whoever hates correction is stupid."</em> Integrity is the foundation of any successful business. As Christians, we must ensure that our actions align with our faith, even when it is difficult. Honesty, transparency, and ethical practices should be at the heart of all business decisions. Leading with integrity builds trust and credibility, both within your organization and in the market.</p>
 
-    <h4>3. Serve Others and Be Generous</h4>
-    <p>Jesus taught us that true leadership is about serving others (Mark 10:45). In business, this means prioritizing the needs of employees, clients, and the community. A successful business is one that contributes to the welfare of others. Being generous with our resources, time, and knowledge will build goodwill and trust, which are essential for long-term success.</p>
+    <h4>3. Serve Others with Love and Compassion</h4>
+    <p>One of the fundamental teachings of Jesus was the importance of loving others. A business founded on Christian principles should prioritize the well-being of employees, customers, and society in general. Treating others with respect and empathy creates a positive work environment and fosters long-term relationships based on trust and compassion.</p>
 
-    <h4>4. Develop a Culture of Excellence</h4>
-    <p>Excellence is a reflection of our character as children of God. Colossians 3:23 says, "Whatever you do, work heartily, as for the Lord and not for men." In every aspect of our business, from customer service to product quality, we should strive for excellence. A culture of excellence not only enhances the reputation of a business but also honors God in all that we do.</p>
+    <h4>4. Focus on Stewardship and Sustainability</h4>
+    <p><em>Matthew 25:14-30 (The Parable of the Talents) teaches us that God entrusts us with resources to manage wisely.</em> Successful businesses are those that are not only profitable but also sustainable. Wise stewardship involves managing finances responsibly, protecting the environment, and considering the long-term impact of business decisions on future generations. Businesses should aim to create lasting value that benefits both the company and the world.</p>
 
-    <h4>5. Trust God in Times of Uncertainty</h4>
-    <p>In every business, there will be times of uncertainty and difficulty. However, we can trust that God is with us and will provide for our needs. As Christians, we do not need to fear setbacks or challenges because God has promised to help us in all things. Philippians 4:6-7 reminds us, "Do not be anxious about anything, but in everything by prayer and petition, with thanksgiving, present your requests to God."</p>
+    <h4>5. Prayer and Discernment in Decision-Making</h4>
+    <p><em>James 1:5: "If any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him."</em> As Christian business leaders, it is essential to seek God's wisdom and guidance in every decision. Through prayer and discernment, we can make decisions that align with His will and lead to success that is not only measured in material terms but in eternal significance.</p>
+
+    <h4>Conclusion</h4>
+    <p>Building a successful business from a Christian perspective requires a balance of hard work, strategic planning, and deep trust in God's guidance. By following biblical principles of integrity, service, stewardship, and prayer, we can create businesses that not only thrive in the marketplace but also honor God and positively impact society.</p>
 
     <a href="post2.html" class="btn-read">Read More</a>
 </div>
-
-    <div class="post">
+<div class="post">
     <h3>The Role of Education in Social Change: A Christian Approach</h3>
-    <img src="educacion-cambio-social.jpg" alt="Education for Social Change">
+    <img src="educacio.jpg" alt="Education for Social Change">
     <p>Education is not just a tool for acquiring knowledge, but a powerful means to transform societies. From a Christian perspective, education plays a fundamental role in social change, as it equips us not only to improve our quality of life but also to fulfill the biblical mandate to love and serve others.</p>
     
     <h4>1. Education as a Tool for Social Justice</h4>
@@ -230,10 +258,13 @@ nav {
 
 </section>
 
+
+</section>
+
 <footer>
-    <p>&copy; 2025 Princi & Co Group. All rights reserved. <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    <p>© 2025 Princi & Co Group. All rights reserved. | Privacy Policy | Terms of Service</p>
 </footer>
 
 </body>
-</html>
 
+</html>
