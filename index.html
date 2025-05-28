@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Princi & Co Group</title>
     <style>
         body {
@@ -17,7 +17,7 @@
             background-image: url('laptop-1478822_1280.jpg');
             background-size: cover;
             background-position: center;
-            padding: 60px 20px;
+            padding: 100px 20px 60px 20px; /* Más espacio arriba */
             text-align: center;
             color: white;
             position: relative;
@@ -25,14 +25,14 @@
         header img {
             max-width: 200px;
             position: absolute;
-            top: 20px;
-            left: 20px;
+            top: 10px;  /* Más arriba para no cubrir título */
+            left: 10px;
             z-index: 10;
             background-color: rgba(255, 255, 255, 0.8);
             padding: 10px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border: 2px solid #996e4c; /* Corporate border color */
+            border: 2px solid #996e4c;
             transition: transform 0.3s ease;
         }
         header img:hover {
@@ -73,22 +73,16 @@
         nav {
             background-color: #333;
             color: white;
-            padding: 10px 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
+            padding: 10px;
+            text-align: center;
         }
         nav a {
             color: white;
-            padding: 10px 15px;
+            margin: 0 15px;
             text-decoration: none;
-            font-weight: 600;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
         }
         nav a:hover {
-            background-color: #996e4c; /* Corporate brown highlight */
+            text-decoration: underline;
         }
         footer {
             background: #222;
@@ -117,8 +111,6 @@
             color: white;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
         }
         .language-select select:hover {
             background-color: #c4ad9c;
@@ -157,43 +149,41 @@
             font-size: 1.1em;
             color: #555;
         }
-
         /* Responsive adjustments */
         @media (max-width: 768px) {
             header {
-                padding: 40px 15px;
+                padding: 80px 15px 40px 15px;
+            }
+            header img {
+                max-width: 100px;
+                top: 5px;
+                left: 5px;
+                padding: 5px;
             }
             header h1 {
                 font-size: 2em;
             }
             header p {
-                font-size: 1.1em;
-            }
-            header img {
-                max-width: 100px; /* Logo smaller on mobile */
-                top: 10px;
-                left: 10px;
-                padding: 5px;
+                font-size: 1em;
+                margin: 15px 0;
             }
             .buttons a {
                 padding: 12px 20px;
                 font-size: 1em;
                 margin: 5px 5px;
-            }
-            nav {
-                padding: 10px 5px;
+                display: block;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
             }
             nav a {
-                padding: 8px 12px;
-                font-size: 1em;
+                display: block;
+                margin: 10px 0;
             }
-            .valores-text {
-                padding: 20px;
-                margin: 20px 15px;
-                max-width: 100%;
-            }
-            h2 {
-                font-size: 1.8em;
+            .language-select {
+                position: static;
+                margin: 15px 0;
+                text-align: center;
             }
         }
     </style>
@@ -202,15 +192,22 @@
     <header>
         <img src="sin fondo.svg" alt="Princi & Co Group" />
         <div>
-            <h1 style="text-shadow: 3px 3px 5px #301d0f, 1px 1px 2px #D2B48C;">Princi & Co Group</h1>
-            <p style="text-shadow: 2px 2px 4px #301d0f, 1px 1px 1px #D2B48C;">Transforming Lives and Businesses with a Divine Purpose</p>
+            <h1 style="text-shadow: 3px 3px 5px #301d0f, 1px 1px 2px #D2B48C;">
+                Princi & Co Group
+            </h1>
+            <p style="text-shadow: 2px 2px 4px #301d0f, 1px 1px 1px #D2B48C;">
+                Transforming Lives and Businesses with a Divine Purpose
+            </p>
         </div>
         <div class="buttons">
             <a href="vision-mission-en.html">Learn about our Vision</a>
             <a href="enterprises.html">Explore our Companies</a>
         </div>
         <div class="language-select">
-            <select id="language-selector" onchange="window.location.href = this.value;">
+            <select
+                id="language-selector"
+                onchange="window.location.href = this.value;"
+            >
                 <option value="index-es.html">Español</option>
                 <option value="index.html" selected>English</option>
                 <option value="index-fr.html">Français</option>
@@ -228,30 +225,77 @@
     <section class="section">
         <h2>Our Values</h2>
         <div class="valores-text">
-            <p>At Princi & Co Group, we pray and thank the Lord for guiding us in establishing this statement of values, which serves as the foundation of our Christ-like corporate culture. Each letter in "TRUE WORSHIP" represents a value that reflects our commitment to honoring God in everything we do:</p>
+            <p>
+                At Princi & Co Group, we pray and thank the Lord for guiding us
+                in establishing this statement of values, which serves as the
+                foundation of our Christ-like corporate culture. Each letter in
+                "TRUE WORSHIP" represents a value that reflects our commitment
+                to honoring God in everything we do:
+            </p>
             <ul>
-                <li><strong><span>T</span>ruth:</strong> We live and promote the absolute truth of God's Word in all our actions and decisions.</li>
-                <li><strong><span>R</span>ighteousness:</strong> We seek divine justice, acting with integrity and uprightness, reflecting Christ's character.</li>
-                <li><strong><span>U</span>nity:</strong> We foster unity in the body of Christ, collaborating as one to fulfill His purpose.</li>
-                <li><strong><span>E</span>xcellence:</strong> We work with excellence, as for the Lord, always striving to glorify Him through our efforts and dedication.</li>
-                <li><strong><span>W</span>orship:</strong> Everything we do is an act of worship to God, acknowledging His sovereignty and glory.</li>
-                <li><strong><span>O</span>bedience:</strong> We walk in obedience to God's guidance, trusting fully in His perfect plan.</li>
-                <li><strong><span>R</span>espect:</strong> We honor every person as God's creation, acting with humility, empathy, and compassion.</li>
-                <li><strong><span>S</span>tewardship:</strong> We faithfully manage the resources God entrusts to us, using them for His kingdom and glory.</li>
-                <li><strong><span>H</span>ope:</strong> We are bearers of hope, showing Christ's love and His promise of eternal life at all times.</li>
-                <li><strong><span>I</span>ntegrity:</strong> We maintain a blameless testimony, reflecting Kingdom values in every aspect of our lives and business.</li>
-                <li><strong><span>P</span>urpose:</strong> We recognize that we are called with a divine purpose, and we work to fulfill it in obedience and faith.</li>
+                <li>
+                    <strong><span>T</span>ruth:</strong> We live and promote the
+                    absolute truth of God's Word in all our actions and decisions.
+                </li>
+                <li>
+                    <strong><span>R</span>ighteousness:</strong> We seek divine
+                    justice, acting with integrity and uprightness, reflecting
+                    Christ's character.
+                </li>
+                <li>
+                    <strong><span>U</span>nity:</strong> We foster unity in the
+                    body of Christ, collaborating as one to fulfill His purpose.
+                </li>
+                <li>
+                    <strong><span>E</span>xcellence:</strong> We work with
+                    excellence, as for the Lord, always striving to glorify Him
+                    through our efforts and dedication.
+                </li>
+                <li>
+                    <strong><span>W</span>orship:</strong> Everything we do is an
+                    act of worship to God, acknowledging His sovereignty and glory.
+                </li>
+                <li>
+                    <strong><span>O</span>bedience:</strong> We walk in obedience
+                    to God's guidance, trusting fully in His perfect plan.
+                </li>
+                <li>
+                    <strong><span>R</span>espect:</strong> We honor every person
+                    as God's creation, acting with humility, empathy, and
+                    compassion.
+                </li>
+                <li>
+                    <strong><span>S</span>tewardship:</strong> We faithfully
+                    manage the resources God entrusts to us, using them for His
+                    kingdom and glory.
+                </li>
+                <li>
+                    <strong><span>H</span>ope:</strong> We are bearers of hope,
+                    showing Christ's love and His promise of eternal life at all
+                    times.
+                </li>
+                <li>
+                    <strong><span>I</span>ntegrity:</strong> We maintain a
+                    blameless testimony, reflecting Kingdom values in every aspect
+                    of our lives and business.
+                </li>
+                <li>
+                    <strong><span>P</span>urpose:</strong> We recognize that we
+                    are called with a divine purpose, and we work to fulfill it in
+                    obedience and faith.
+                </li>
             </ul>
         </div>
     </section>
     <footer>
         <p>© 2025 Princi & Co Group. All rights reserved.</p>
         <div>
-            <a href="#">Facebook</a> | 
-            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
             <a href="#">LinkedIn</a>
         </div>
         <p><a href="privacy-policy.html">Privacy Policy</a></p>
     </footer>
 </body>
+</html>
 </html>
