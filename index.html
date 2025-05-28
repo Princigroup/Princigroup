@@ -1,276 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Home - Princi & Co Group</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333333;
-        }
-        header {
-            background-image: url('laptop-1478822_1280.jpg');
-            background-size: cover;
-            background-position: center;
-            padding: 60px 20px;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-        header img {
-            max-width: 200px;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 10;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border: 2px solid #996e4c;
-            transition: transform 0.3s ease;
-        }
-        header img:hover {
-            transform: scale(1.1);
-        }
-        header h1 {
-            font-size: 3em;
-            color: #ffffff;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        }
-        header p {
-            font-size: 1.5em;
-            margin: 20px 0;
-            color: #ffffff;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-        .buttons {
-            margin-top: 30px;
-        }
-        .buttons a {
-            background-color: #0066cc;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 0 10px;
-            display: inline-block;
-            font-size: 1.2em;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        .buttons a:hover {
-            background-color: #005bb5;
-            transform: scale(1.05);
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-        footer a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        .language-select {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-        .language-select select {
-            padding: 5px;
-            font-size: 1em;
-            background-color: #333;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-        .language-select select:hover {
-            background-color: #c4ad9c;
-        }
-        .valores-text {
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 30px;
-            margin: 40px auto;
-            max-width: 900px;
-            text-align: left;
-        }
-        h2 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #2c1d13;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 20px;
-        }
-        ul li strong {
-            font-size: 1.3em;
-            color: #000;
-        }
-        ul li strong span {
-            color: #9e704f;
-            font-weight: bold;
-        }
-        ul li p {
-            margin: 5px 0 0;
-            font-size: 1.1em;
-            color: #555;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Princi & Co Group</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-        /* ======= MOBILE STYLES ======= */
-        @media (max-width: 768px) {
-            header {
-                padding: 40px 10px;
-            }
+    /* HEADER */
+    header {
+      background-image: url('laptop-1478822_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
 
-            header h1 {
-                font-size: 2em;
-            }
+    header img {
+      max-width: 200px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid #996e4c;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
 
-            header p {
-                font-size: 1.2em;
-            }
+    header img:hover {
+      transform: scale(1.1);
+    }
 
-            header img {
-                max-width: 120px;
-                top: 10px;
-                left: 10px;
-            }
+    header h1 {
+      font-size: 3em;
+      text-shadow: 3px 3px 5px #301d0f, 1px 1px 2px #D2B48C;
+    }
 
-            .buttons {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-                margin-top: 20px;
-            }
+    header p {
+      font-size: 1.5em;
+      margin: 20px 0;
+      text-shadow: 2px 2px 4px #301d0f, 1px 1px 1px #D2B48C;
+    }
 
-            .buttons a {
-                width: 90%;
-                font-size: 1em;
-                padding: 12px 20px;
-                margin: 0;
-            }
+    .buttons {
+      margin-top: 30px;
+    }
 
-            .language-select {
-                position: static;
-                margin-top: 20px;
-                text-align: center;
-            }
+    .buttons a {
+      background-color: #0066cc;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 0 10px;
+      display: inline-block;
+      font-size: 1.2em;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
 
-            nav {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-            }
+    .buttons a:hover {
+      background-color: #005bb5;
+      transform: scale(1.05);
+    }
 
-            nav a {
-                margin: 5px 0;
-            }
+    /* NAVBAR MODERNA */
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      backdrop-filter: blur(5px);
+    }
 
-            .valores-text {
-                padding: 20px;
-                margin: 20px;
-            }
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 15px 10px;
+    }
 
-            h2 {
-                font-size: 2em;
-            }
+    .nav-link {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.1em;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
 
-            ul li p {
-                font-size: 1em;
-            }
-        }
-    </style>
+    .nav-link:hover {
+      background-color: #9e704f;
+      transform: scale(1.05);
+    }
+
+    /* HAMBURGER MENU */
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 20px;
+        text-align: center;
+      }
+
+      .nav-container.show {
+        display: flex;
+      }
+
+      .nav-link {
+        margin: 15px 0;
+        font-size: 1.2em;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
+
+    /* LANGUAGE SELECTOR */
+    .language-select {
+      position: absolute;
+      top: 20px;
+      right: 60px;
+    }
+
+    .language-select select {
+      padding: 5px;
+      font-size: 1em;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .language-select select:hover {
+      background-color: #c4ad9c;
+    }
+
+    /* SECTION CONTENT */
+    .valores-text {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      margin: 40px auto;
+      max-width: 900px;
+      text-align: left;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #2c1d13;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 20px;
+    }
+
+    ul li strong {
+      font-size: 1.3em;
+      color: #000;
+    }
+
+    ul li strong span {
+      color: #9e704f;
+      font-weight: bold;
+    }
+
+    ul li p {
+      margin: 5px 0 0;
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="sin fondo.svg" alt="Princi & Co Group" />
-        <div>
-            <h1 style="text-shadow: 3px 3px 5px #301d0f, 1px 1px 2px #D2B48C;">Princi & Co Group</h1>
-            <p style="text-shadow: 2px 2px 4px #301d0f, 1px 1px 1px #D2B48C;">Transforming Lives and Businesses with a Divine Purpose</p>
-        </div>
-        <div class="buttons">
-            <a href="vision-mission-en.html">Learn about our Vision</a>
-            <a href="enterprises.html">Explore our Companies</a>
-        </div>
-        <div class="language-select">
-            <select id="language-selector" onchange="window.location.href = this.value;">
-                <option value="index-es.html">Español</option>
-                <option value="index.html" selected>English</option>
-                <option value="index-fr.html">Français</option>
-                <option value="index-it.html">Italiano</option>
-            </select>
-        </div>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about-us.html">About Us</a>
-        <a href="vision-mission-en.html">Vision & Mission</a>
-        <a href="blog-en.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <section class="section">
-        <h2>Our Values</h2>
-        <div class="valores-text">
-            <p>At Princi & Co Group, we pray and thank the Lord for guiding us in establishing this statement of values, which serves as the foundation of our Christ-like corporate culture. Each letter in "TRUE WORSHIP" represents a value that reflects our commitment to honoring God in everything we do:</p>
-            <ul>
-                <li><strong><span>T</span>ruth:</strong> We live and promote the absolute truth of God's Word in all our actions and decisions.</li>
-                <li><strong><span>R</span>ighteousness:</strong> We seek divine justice, acting with integrity and uprightness, reflecting Christ's character.</li>
-                <li><strong><span>U</span>nity:</strong> We foster unity in the body of Christ, collaborating as one to fulfill His purpose.</li>
-                <li><strong><span>E</span>xcellence:</strong> We work with excellence, as for the Lord, always striving to glorify Him through our efforts and dedication.</li>
-                <li><strong><span>W</span>orship:</strong> Everything we do is an act of worship to God, acknowledging His sovereignty and glory.</li>
-                <li><strong><span>O</span>bedience:</strong> We walk in obedience to God's guidance, trusting fully in His perfect plan.</li>
-                <li><strong><span>R</span>espect:</strong> We honor every person as God's creation, acting with humility, empathy, and compassion.</li>
-                <li><strong><span>S</span>tewardship:</strong> We faithfully manage the resources God entrusts to us, using them for His kingdom and glory.</li>
-                <li><strong><span>H</span>ope:</strong> We are bearers of hope, showing Christ's love and His promise of eternal life at all times.</li>
-                <li><strong><span>I</span>ntegrity:</strong> We maintain a blameless testimony, reflecting Kingdom values in every aspect of our lives and business.</li>
-                <li><strong><span>P</span>urpose:</strong> We recognize that we are called with a divine purpose, and we work to fulfill it in obedience and faith.</li>
-            </ul>
-        </div>
-    </section>
-    <footer>
-        <p>© 2025 Princi & Co Group. All rights reserved.</p>
-        <div>
-            <a href="#">Facebook</a> |
-            <a href="#">Instagram</a> |
-            <a href="#">LinkedIn</a>
-        </div>
-        <p><a href="privacy-policy.html">Privacy Policy</a></p>
-    </footer>
+  <header>
+    <img src="sin fondo.svg" alt="Princi & Co Group">
+    <div>
+      <h1>Princi & Co Group</h1>
+      <p>Transforming Lives and Businesses with a Divine Purpose</p>
+    </div>
+    <div class="buttons">
+      <a href="vision-mission-en.html">Learn about our Vision</a>
+      <a href="enterprises.html">Explore our Companies</a>
+    </div>
+    <div class="language-select">
+      <select id="language-selector" onchange="window.location.href = this.value;">
+        <option value="index-es.html">Español</option>
+        <option value="index.html" selected>English</option>
+        <option value="index-fr.html">Français</option>
+        <option value="index-it.html">Italiano</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Botón de hamburguesa -->
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+  <!-- Menú de navegación -->
+  <nav class="navbar">
+    <div class="nav-container" id="mobileMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about-us.html" class="nav-link">About Us</a>
+      <a href="vision-mission-en.html" class="nav-link">Vision & Mission</a>
+      <a href="blog-en.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <h2>Our Values</h2>
+    <div class="valores-text">
+      <p>At Princi & Co Group, we pray and thank the Lord for guiding us in establishing this statement of values...</p>
+      <ul>
+        <li><strong><span>T</span>ruth:</strong> We live and promote the absolute truth of God's Word.</li>
+        <li><strong><span>R</span>ighteousness:</strong> We seek divine justice with integrity.</li>
+        <li><strong><span>U</span>nity:</strong> We foster unity in the body of Christ.</li>
+        <li><strong><span>E</span>xcellence:</strong> We work as for the Lord, in excellence.</li>
+        <li><strong><span>W</span>orship:</strong> Everything we do is worship to God.</li>
+        <li><strong><span>O</span>bedience:</strong> We walk in obedience to God's guidance.</li>
+        <li><strong><span>R</span>espect:</strong> We honor every person as God’s creation.</li>
+        <li><strong><span>S</span>tewardship:</strong> We manage God’s resources faithfully.</li>
+        <li><strong><span>H</span>ope:</strong> We share the hope of Christ's love and promise.</li>
+        <li><strong><span>I</span>ntegrity:</strong> We reflect Kingdom values in everything.</li>
+        <li><strong><span>P</span>urpose:</strong> We are called with a divine purpose.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Princi & Co Group. All rights reserved.</p>
+    <div>
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">LinkedIn</a>
+    </div>
+    <p><a href="privacy-policy.html">Privacy Policy</a></p>
+  </footer>
+
+  <!-- Script para mostrar/ocultar menú móvil -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
